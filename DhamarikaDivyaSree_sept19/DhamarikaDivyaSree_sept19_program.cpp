@@ -3,7 +3,7 @@
 #include <stdexcept>
 #include <algorithm>
 
-// ================= ServiceRecord =================
+// Class
 class ServiceRecord {
 private:
     std::string date_;
@@ -39,7 +39,7 @@ public:
     }
 };
 
-// ================= Car =================
+// Car class
 class Car {
 private:
     std::string vin_;
