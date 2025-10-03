@@ -1,0 +1,79 @@
+//8.8 For each of the following, write C++ statements that perform the specified task. Assume that unsigned integers are stored in two bytes and that the starting address of the array is at location 1002500 in memory.
+
+
+//a) Declare an array of type unsigned int called values with five elements, and initialize the elements to the even integers from 2 to 10. Assume that the symbolic constant SIZE has been defined as 5.
+
+#define SIZE 5
+unsigned int values[SIZE] = {2, 4, 6, 8, 10};
+
+
+//b) Declare a pointer vPtr that points to an object of type unsigned int.
+
+
+unsigned int *vPtr;
+
+
+//c) Use a for statement to print the elements of array values using array subscript notation. 
+
+
+for(int i=0;i<SIZE;i++){
+std::cout << values[i] << " ";
+}
+
+
+//d)Write two separate statements that assign the starting address of array values to pointer variable vPtr
+
+
+vPtr=values;
+vPtr=&values[0];
+
+
+//e) Use a for statement to print the elements of array values using pointer/offset notation.
+
+for(int i=0;i<SIZE;i++){
+std::cout << *(vPtr+i) << " ";
+}
+
+
+//f) Use a for statement to print the elements of array values using pointer/offset notation with the array name as the pointer.
+
+
+for(int i=0;i<SIZE;i++){
+std::cout << *(values+i) <<" ";
+}
+
+
+//g) Use a for statement to print the elements of array values by subscripting the pointer to the array.
+
+
+for(int i=0;i<SIZE;i++){
+std::cout << vPtr[i] <<" ";
+}
+
+
+//h) Refer to the fifth element of values using array subscript notation, pointer/offset notation with the array name as the pointer, pointer subscript notation and pointer/offset notation.
+
+
+
+std::cout << values[4];     //array subscript
+std::cout << *(values + 4); //pointer/offset with array name
+std::cout << vPtr[4];       //pointer subscript
+std::cout << *(vPtr+4);     //pointer/offset with vPtr
+
+//i) What address is referenced by vPtr + 3? What value is stored at that location?
+
+
+Initial Address=1002500
+vPtr+3=1002500+(3*2)=1002506
+value=value[3]=8
+
+
+//j) Assuming that vPtr points to values[ 4 ], what address is referenced by vPtr -= 4? What value is stored at that location?
+
+Address of values[4]=1002508
+//after subtracting 4 vPtr points to values[0]
+Address of values[0]=1002500
+Value=2
+
+
+
