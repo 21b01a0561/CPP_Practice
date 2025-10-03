@@ -1,0 +1,104 @@
+//task-1
+//8.3   For each of the following, write C++ statements that perform the specified task. Assume that double-precision, floating-point numbers are stored in eight bytes and that the starting address of the array is at location 1002500 in memory. Each part of the exercise should use the results of previous parts where appropriate.
+
+//a) Declare an array of type double called numbers with 10 elements, and initialize the elements to the values 0.0, 1.1, 2.2, …, 9.9. Assume that the symbolic constant SIZE has
+been defined as 10.
+
+//solution(a):
+
+const int SIZE=10;
+double numbers[SIZE]={0.0,1.1,2.2,3.3,4.4,5.5,6.6,7.7,8.8,9.9};
+
+//b) Declare a pointer nPtr that points to a variable of type double.
+
+//solution(b):
+
+double *nPtr;
+
+//c) Use a for statement to print the elements of array numbers using array subscript notation. Print each number with one position of precision to the right of the decimal point.
+  
+
+//solution(c):
+
+for(int i=0;i<SIZE;i++){
+std::cout<< std::fixed<< std::setprecision(1) << numbers[i]<<" ";
+}
+std::cout<<std::endl;
+
+//d) Write two separate statements that each assign the starting address of array numbers to the pointer variable nPtr.
+
+//solution(d):
+
+nPtr=numbers;   
+nPtr=&numbers[0];
+
+//e) Use a for statement to print the elements of array numbers using pointer/offset notation with pointer nPtr.
+
+//solution(e):
+
+for(int i=0;i<SIZE;i++){
+std::cout<< std::fixed<< std::setprecision(1) << *(nPtr+i)<<" ";
+}
+std::cout<<std::endl;
+
+
+//f) Use a for statement to print the elements of array numbers using pointer/offset notation with the array name as the pointer.
+
+//solution(f):
+
+
+for(int i=0;i<SIZE;i++){
+std::cout<< std::fixed<< std::setprecision(1) << *(numbers+i) <<" ";
+}
+std::cout<<std::endl;
+
+//g) Use a for statement to print the elements of array numbers using pointer/subscript notation with pointer nPtr.
+
+//solution(g):
+
+
+for(int i=0;i<SIZE;i++){
+std::cout<< std::fixed<< std::setprecision(1) << nPtr[i] <<" ";
+}
+std::cout<<std::endl;
+
+
+//h) Refer to the fourth element of array numbers using array subscript notation, pointer/offset notation with the array name as the pointer, pointer subscript notation with nPtr and pointer/offset notation with nPtr.
+
+//solution(h):
+
+
+std::cout<<numbers[3]<<std::endl;
+std::cout<<*(numbers+3)<<std::endl;
+std::cout<<nPtr[3]<<std::endl;
+std::cout<<*(nPtr+3)<<std::endl;
+
+
+//i) Assuming that nPtr points to the beginning of array numbers, what address is referenced by nPtr + 8? What value is stored at that location?
+
+
+//solution(i):
+
+
+Address:1002500+(8*8)=1002564
+
+//j) Assuming that nPtr points to numbers[5], what address is referenced by nPtr after nPtr -= 4 is executed? What’s the value stored at that location?
+
+
+//solution(j):
+
+
+//initial Address at numbers[5] position
+
+Address=1002500+(5*8)=1002540
+
+//after moving back 4 elements(4*8=32)
+
+New Address=1002540-32=1002508
+
+//which is at index number[1] and the value is 1.1
+
+
+
+
+
