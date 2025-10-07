@@ -1,7 +1,7 @@
 
 // Member-function definitions for class Invoice
 
-#include "Invoice.h"
+#include "DhamarikaDivyaSree_sept22_task3_Invoice.h"
 #include <iostream> // for std::cout
 
 // constructor initializes data members with validation
@@ -83,3 +83,4 @@ double Invoice::getInvoiceAmount() const
 {
     return quantity * pricePerItem; // multiply quantity by price
 }
+
