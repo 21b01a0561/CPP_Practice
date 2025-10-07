@@ -1,7 +1,7 @@
 // HealthProfile.cpp
 // Implementation of HealthProfile class
 
-#include "HealthProfile.h"
+#include "DhamarikaDivyaSree_sept22_task5_HealthProfile.h"
 #include <iostream>
 
 // Constructor: initialize all attributes
@@ -83,3 +83,4 @@ double HealthProfile::getBMI() const
 {
     return (weight * 703) / (height * height);
 }
+
