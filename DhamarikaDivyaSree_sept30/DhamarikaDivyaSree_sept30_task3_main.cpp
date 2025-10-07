@@ -1,4 +1,4 @@
-#include "maze.h"
+#include "DhamarikaDivyaSree_sept30_task3_Maze.h"
 #include <iostream>
 
 
@@ -33,3 +33,4 @@ int main() {
 
     return 0;
 }
+
