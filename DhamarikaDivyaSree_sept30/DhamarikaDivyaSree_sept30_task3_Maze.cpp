@@ -1,4 +1,4 @@
-#include "maze.h"
+#include "DhamarikaDivyaSree_sept30_task3_Maze.h"
 #include <iostream>
 
 
@@ -62,3 +62,4 @@ bool mazeTraverse(char maze[SIZE][SIZE], int x, int y, int direction, int startX
     // No moves possible, backtrack
     return false;
 }
+
