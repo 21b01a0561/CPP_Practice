@@ -3,7 +3,7 @@
 
 #include <iostream>
 #include <iomanip> // for formatting floating-point numbers
-#include "HeartRates.h"
+#include "DhamarikaDivyaSree_sept22_task4_HeartRates.h"
 
 int main()
 {
