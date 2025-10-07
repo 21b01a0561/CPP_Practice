@@ -2,7 +2,7 @@
 // GradeBook test program that demonstrates course name and instructor name.
 
 #include <iostream>    // allows program to output data to the screen
-#include "GradeBook.h" // include definition of class GradeBook
+#include "DhamarikaDivyaSree_sept22_task1_GradeBook.h" // include definition of class GradeBook
 
 
 // main function begins program execution
