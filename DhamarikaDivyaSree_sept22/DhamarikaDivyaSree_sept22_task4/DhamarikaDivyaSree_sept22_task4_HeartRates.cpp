@@ -1,7 +1,7 @@
 // HeartRates.cpp
 // Implementation of HeartRates class member functions
 
-#include "HeartRates.h"
+#include "DhamarikaDivyaSree_sept22_task4_HeartRates.h"
 #include <iostream> // for std::cin and std::cout
 
 // Constructor: initialize all data members
@@ -106,3 +106,4 @@ void HeartRates::getTargetHeartRate(double& lower, double& upper) const
     lower = maxRate * 0.5;               // lower bound 50%
     upper = maxRate * 0.85;              // upper bound 85%
 }
+
