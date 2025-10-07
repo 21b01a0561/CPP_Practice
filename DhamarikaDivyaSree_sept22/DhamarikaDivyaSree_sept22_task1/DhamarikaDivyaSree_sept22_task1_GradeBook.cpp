@@ -3,7 +3,7 @@
 // This file contains the implementations of the functions declared in GradeBook.h
 
 #include <iostream>     // allows program to output data to the screen
-#include "GradeBook.h"  // include definition of class GradeBook
+#include "DhamarikaDivyaSree_sept22_task1_GradeBook.h"  // include definition of class GradeBook
 
 
 // constructor initializes courseName and instructorName with strings supplied as arguments
@@ -45,3 +45,4 @@ void GradeBook::displayMessage() const
     std::cout << "This course is presented by: " << getInstructorName() << std::endl; 
     // print instructor name
 }
+
