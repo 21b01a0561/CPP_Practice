@@ -2,7 +2,7 @@
 // Program to test class Account with double balances.
 
 #include <iostream>
-#include "Account.h"
+#include "DhamarikaDivyaSree_sept22_task2_Account.h"
 
 int main()
 {
