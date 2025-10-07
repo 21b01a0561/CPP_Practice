@@ -1,6 +1,6 @@
 #include <iostream>
 #include <iomanip>
-#include "Time.h"
+#include "DhamarikaDivyaSree_sept24_task1_Time.h"
 
 // Constructor: initializes time
 Time::Time( int hr, int min, int sec ) 
@@ -71,3 +71,4 @@ void Time::tick()
         }
     }
 }
+
