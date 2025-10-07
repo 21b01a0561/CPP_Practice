@@ -1,4 +1,4 @@
-#include "BatteryMonitor.h"
+#include "DivyaSree_oct1_task2_BatteryMonitor.h"
 
 // Constructor
 BatteryMonitor::BatteryMonitor(std::string id, int cycles, float capacity, float original, bool active, int trips) {
@@ -91,3 +91,4 @@ std::ostream& operator<<(std::ostream& out, const BatteryMonitor& b) {
     out << "\n";
     return out;
 }
+
